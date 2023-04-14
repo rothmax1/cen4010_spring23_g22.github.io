@@ -20,5 +20,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
 <form method="post" action="major-search.php">
 <input type="text" name="search">
 </form>
+<form method="post" action="career-paths-search.php">
+<input type="text" name="search">
+</form>
 </body>
 </html>
