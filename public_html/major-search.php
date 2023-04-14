@@ -6,6 +6,8 @@ $result = mysqli_query($mysqli, $sql);
 
 while ($row = mysqli_fetch_assoc($result)){
 	$name = $row['name'];
-	echo $name . "<br>";
+	echo $name . "\t";
+	$link = $row['url'];
+	echo $link . "<br>";
 }
 ?>
