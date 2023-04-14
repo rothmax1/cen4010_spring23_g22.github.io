@@ -1,19 +1,10 @@
 <?php
 
-$host = "localhost";
-$dbname = "cen4010sp23g22";
-$username = "cen4010sp23g22";
-$password = "ASpring#2023";
+include 'database.php';
 
-$name = $_POST['username'];
-$email = $_POST['email'];
-$user_password = $_POST['password'];
-
-$mysqli = new mysqli($host, $username, $password, $dbname);
-
-if ($mysqli->connect_errno){
-	die("Connection error: " . $mysqli->connect_error);
-}
+$name = $_POST["username"];
+$email = $_POST["email"];
+$user_password = $_POST["password"];
 
 if (empty($_POST["username"])) {
 	die("Name is required.");
