@@ -17,6 +17,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
 </head>
 <h1>The Integrator</h1>
 <body>
+<a href='logout'>Logout</a>
 <form method="post" action="major-search.php">
 <h2>Search Majors</h2>
 <input type="text" name="search">
